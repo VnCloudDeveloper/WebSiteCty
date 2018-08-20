@@ -1,0 +1,12 @@
+C:\Users\HungZoro\source\repos\VNCloudWeb\VNCloudWeb\bin\Debug\netcoreapp2.0\VNCloudWeb.deps.json
+C:\Users\HungZoro\source\repos\VNCloudWeb\VNCloudWeb\bin\Debug\netcoreapp2.0\VNCloudWeb.runtimeconfig.json
+C:\Users\HungZoro\source\repos\VNCloudWeb\VNCloudWeb\bin\Debug\netcoreapp2.0\VNCloudWeb.runtimeconfig.dev.json
+C:\Users\HungZoro\source\repos\VNCloudWeb\VNCloudWeb\bin\Debug\netcoreapp2.0\VNCloudWeb.dll
+C:\Users\HungZoro\source\repos\VNCloudWeb\VNCloudWeb\bin\Debug\netcoreapp2.0\VNCloudWeb.pdb
+C:\Users\HungZoro\source\repos\VNCloudWeb\VNCloudWeb\obj\Debug\netcoreapp2.0\VNCloudWeb.csprojAssemblyReference.cache
+C:\Users\HungZoro\source\repos\VNCloudWeb\VNCloudWeb\obj\Debug\netcoreapp2.0\VNCloudWeb.csproj.CoreCompileInputs.cache
+C:\Users\HungZoro\source\repos\VNCloudWeb\VNCloudWeb\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\HungZoro\source\repos\VNCloudWeb\VNCloudWeb\obj\Debug\netcoreapp2.0\VNCloudWeb.AssemblyInfoInputs.cache
+C:\Users\HungZoro\source\repos\VNCloudWeb\VNCloudWeb\obj\Debug\netcoreapp2.0\VNCloudWeb.AssemblyInfo.cs
+C:\Users\HungZoro\source\repos\VNCloudWeb\VNCloudWeb\obj\Debug\netcoreapp2.0\VNCloudWeb.dll
+C:\Users\HungZoro\source\repos\VNCloudWeb\VNCloudWeb\obj\Debug\netcoreapp2.0\VNCloudWeb.pdb
