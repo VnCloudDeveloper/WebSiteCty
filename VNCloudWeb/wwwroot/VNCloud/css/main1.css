@@ -11,14 +11,17 @@ html {
 body {
     width: 100%;
     height: 100%;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto";
     font-size: 14px;
 }
 
 .headers{
+    height:60px;
     font-family: "Roboto";
     font-weight: bold;
-    
+    background:#ffffff;
+    margin-left:0;
+    margin-right:0;
 }
 .headers ul li
 {
@@ -38,11 +41,18 @@ body {
 }
 
 //Typography
-h1, h2, h4, h5, h6 {
+h1, h4, h5, h6 {
     margin: 10px -15px 35px;
     text-transform: uppercase;
     font-family: 'Roboto';
     letter-spacing: 1px;
+}
+h2 {
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    color: #7fbe4b;
+    font-weight: 900;
+    letter-spacing: 3px;
 }
 h3 {
     margin: 0;
@@ -138,34 +148,6 @@ a:hover, a:focus {
     }
 }
 
-//Landing page
-.intro {
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
-    text-align: center;
-    color: @light;
-    background: url(../img/background.jpg) no-repeat bottom center scroll;
-    background-color: @dark;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.intro-body {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.brand-heading {
-    font-size: 40px;
-}
-
-.intro-text {
-    font-size: 24px;
-}
 
 @media(min-width:767px) {
     .intro {
@@ -187,41 +169,6 @@ a:hover, a:focus {
     padding: 70px 0 40px;
 }
 
-//Icon Blocks
-.block-icon-left {
-    overflow: auto;
-    h1, h2, h3, h4, h5, h6
-
-{
-    margin: 0 0 10px 0;
-    padding: 0;
-    font-size: 20px;
-}
-
-.icon-content {
-    float: left;
-    width: 70%;
-}
-
-.icon {
-    float: left;
-    width: 30%;
-    margin-top: 10px;
-}
-
-}
-
-.who-section {
-    width: 100%;
-    padding: 50px 0;
-    color: @light;
-    background: url(../img/bg.jpg) no repeat center center scroll;
-    background-color: @dark;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 
 @media(min-width:767px) {
     .who-section {
@@ -229,17 +176,7 @@ a:hover, a:focus {
     }
 }
 
-//Client Section
-#clients {
-    text-align: center;
-    padding-bottom: 80px;
-    img
 
-{
-    margin-right: 30px;
-}
-
-}
 
 //COntact section
 #contact {
@@ -271,11 +208,111 @@ a:hover, a:focus {
     padding-bottom: 40px;
 }
 
-.container {
-    width: 1140px;
-    max-width: 100%;
-}
+
 @media (min-width: 1200px) .row {
     margin-right: -15px;
     margin-left: -15px;
+}
+
+#slider {
+    max-width: 100%;
+    margin: auto;
+    padding: 0;
+    position: relative;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    border: none;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+#slider .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: inherit;
+    text-align: left;
+    left: 10%;
+    right: 10%;
+}
+.inner_carousel {
+    padding: 20px 20px ;
+    text-align: center;
+}
+
+#slider p {
+    color: #ffffff;
+    font-weight: 700;
+    margin: 15px 0 15px 0;
+    line-height: 20px;
+    border-radius: 0 0 5px 5px;
+    font: 16px/20px roboto;
+}
+a.theme_button {
+    color: #ffffff;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    background: #7fbe4b;
+    border-radius: 0;
+}
+a.theme_white_button {
+    border: none;
+    text-transform: uppercase;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 0;
+    background: #ffffff;
+    color: #7fbe4b;
+
+}
+.ml-3 {
+    margin-left: 1rem !important;
+}
+.about-content {
+    margin-right: 20px;
+}
+section h3 {
+    font-weight: 900;
+    color: #7fbe4b;
+    border-left: 5px solid #000000;
+    padding: 0;
+    padding-left: 15px;
+    margin-bottom: 40px;
+    font-family: 'Roboto';
+    font-size: 1.75rem;
+}
+.about-content p {
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0;
+}
+.about-content a {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    border: none;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.about_img img {
+    width: 100%;
+}
+section img {
+    max-width: 100%;
 }
