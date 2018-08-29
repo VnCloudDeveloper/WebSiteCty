@@ -13,19 +13,41 @@ body {
     height: 100%;
     font-family: "Roboto";
     font-size: 14px;
+    color: #5b5b5b; 
+    background-color: #fff;
+    margin-top:-20px;
 }
 
-.headers{
-    height:60px;
+.headers {
+    height: 60px;
     font-family: "Roboto";
     font-weight: bold;
-    background:#ffffff;
-    margin-left:0;
-    margin-right:0;
+    background: #ffffff;
+    margin: 0;
+    border-bottom: 2px solid #7fbe4b;
+    border-top: 2px solid #7fbe4b;
+    width: 100%;
+    
 }
-.headers ul li
-{
+.headers ul li {
     position: relative;
+}
+
+ul {
+    margin: 0 0 0 15px;
+    padding: 0;
+}
+
+.contact_details ul li {
+    list-style: none;
+    display: inline;
+    color: #ffffff;
+    font-size: 16px;
+    margin-left : 10px;
+}
+.contact_details ul li span i {
+    padding-right: 6px;
+    color: #7fbe4b;
 }
 .headers ul li::after {
   content: '';
@@ -37,9 +59,32 @@ body {
   right: 0;
   top: 0; 
   background-color:#000000;
-
 }
 
+#lienhe::after{
+    content:none;
+}
+
+.top_bar {
+    background: #000000;
+    width: 100%;
+    float: left;
+    padding: 4px;
+    margin-bottom: 62px;
+}
+
+#nav-bar{
+    margin-top:3px;
+}
+
+.socialbox {
+    text-align: right;
+}
+
+.socialbox a {
+    border-right: 1px solid #ccc;
+    padding: 0px 8px;
+}
 //Typography
 h1, h4, h5, h6 {
     margin: 10px -15px 35px;
@@ -74,11 +119,14 @@ h3::after{
   transform: translateX(-50%);
 }
 p {
-    margin: 0;
+    margin: 15px 0 15px;
     padding: 0;
     font-family: 'Roboto';
     letter-spacing: 0px;
+    font-weight: normal;
+    font-size: 14px;
 }
+
 
 a {
     color: #7fbe4b;
@@ -89,6 +137,20 @@ a:hover, a:focus {
         text-decoration: none;
         color: #7fbe4b !important;
     }
+
+#site-top{
+    margin :0;
+}
+
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact_details {
+    padding: 12px 0;
+}
 
 //Navigation
 .navbar {
@@ -130,7 +192,7 @@ a:hover, a:focus {
 
 @media(min-width: 767px) {
     .navbar {
-        padding: 20px 0;
+        padding:55px 0;
         border-bottom: none;
         background: transparent;
         -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
@@ -254,7 +316,7 @@ a.theme_button {
     color: #ffffff;
     border: none;
     text-transform: uppercase;
-    margin-top: 20px;
+    margin-top: 3px;
     letter-spacing: 1px;
     padding: 12px 20px;
     font-size: 14px;
@@ -265,7 +327,7 @@ a.theme_button {
 a.theme_white_button {
     border: none;
     text-transform: uppercase;
-    margin-top: 20px;
+    margin-top: 3px;
     letter-spacing: 1px;
     padding: 12px 20px;
     font-size: 14px;
@@ -291,6 +353,22 @@ section h3 {
     font-family: 'Roboto';
     font-size: 1.75rem;
 }
+
+section{
+    margin-bottom:30px;
+}
+#services-tab h3 {
+    font-weight: 900;
+    color: #fff;
+    border-left: 5px solid #000000;
+    padding: 0;
+    padding-left: 15px;
+    margin-bottom: 40px;
+    font-family: 'Roboto';
+    font-size: 1.75rem;
+    margin-top: 30px;
+}
+
 .about-content p {
     padding: 10px 0;
     font-size: 16px;
@@ -315,4 +393,89 @@ img {
 }
 section img {
     max-width: 100%;
+}
+
+container h1 {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #7fbe4b;
+    margin-top: 7px;
+}
+
+h1 {
+    margin: 0 !important;
+    padding: 10px 0 !important;
+    line-height: 1.4 !important;
+    letter-spacing: 1px !important;
+    color: #046b96 !important;
+    font-family: 'Roboto' !important;
+}
+
+h5 {
+    padding: 10px 0;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    color: #046b96;
+    font-family: 'Roboto';
+    margin: 1em 0;
+    font-size: 2rem;
+}
+
+.sow-icon-container {
+    font-family: 'feature-background';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    position: relative;
+    color: #404040;
+    margin-top: 20px;
+}
+
+th{
+    text-align:center;
+    font-size:17px;
+    color:#fff;
+}
+
+#tablepress-2 {
+    table-layout: fixed;
+    line-height: 2.5;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+    background-color: #32ac40;
+}
+
+table {
+    font-size: 14px;
+}
+
+#about ul li {
+    list-style: none;
+}
+
+#carousel-inner1 .item{
+    margin-bottom:130px;
+    margin-top:40px;
+}
+
+.partner-h3{
+    margin-top:20px;
+    color:#fff;
+}
+
+.white_head_title {
+    margin-top: 30px;
+    color: #fff;
 }

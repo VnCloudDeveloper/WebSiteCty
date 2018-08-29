@@ -9,55 +9,102 @@
     <title>VNCloud WebSite</title>
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Monsterrat:400,700" rel="stylesheet" type="text/css">
+
     <!-- Custom styles for this template -->
+    <link href="~/VNCloud/css/bootstrap.css" rel="stylesheet">
     <link href="~/VNCloud/css/main.css" rel="stylesheet">
     <link href="~/VNCloud/css/main1.css" rel="stylesheet">
     <link href="~/VNCloud/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
+
 </head>
 <body>
+    <section id="site_top" class="top_bar" style="">
+        <div class="container container-full-width">
+            <div class="contact_details">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-8 pl-0">
+                        <ul class="left-side-content">
+                            <li>
+                                <span class="hi_normal"><i class="far fa-clock"></i>Số 24, 260/28 Cầu Giấy, Hà Nội</span>
+                            </li>
+                            <li class="">
+                                <span class="hi_normal"><i class="fas fa-phone-volume"></i>0974-020-233 | (024)730-291-168</span>
+                            </li>
+                            <li class="email_wrap">
+                                <span class="hi_normal"><i class="far fa-envelope-open"></i>sales@vncloud.vn</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <ul class="right-side-content">
+                            <div class="social-icons">
+                                <div class="top_social">
+                                    <div class="socialbox">
+                                        <a class="twitter" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter align-middle" aria-hidden="true"></i></a>
+                                        <a class="facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f align-middle " aria-hidden="true"></i></a>
+                                        <a class="linkedin" href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in align-middle" aria-hidden="true"></i></a>
+                                        <a class="gplus" href="https://plus.google.com/" target="_blank"><i class="fab fa-google-plus-g align-middle" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container headers ">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+            <div class="container" id="nav-bar">
+                <div class="col-md-2">
+                    <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
 
-                <a href="Home/index" class="custom-logo-link" rel="home" itemprop="url"><img src="https://vncloud.vn/wp-content/uploads/2018/07/cropped-LogowebVNCLOUD-4.png" class="custom-logo" alt="vnCloud" itemprop="logo" width="240" height="55"></a>
+                        <a asp-area="" asp-controller="Home" asp-action="index" class="custom-logo-link" rel="home" itemprop="url"><img src="https://vncloud.vn/wp-content/uploads/2018/07/cropped-LogowebVNCLOUD-4.png" class="custom-logo" alt="vnCloud" itemprop="logo" width="220" height="50"></a>
 
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class=" collapse navbar-collapse navbar-right navbar-main-collapse">
+                        <ul class="nav navbar-nav ">
+                            <li class="hidden">
+                                <a href="#page-top"></a>
+                            </li>
+                            <li class="page-scroll">
+                                <a asp-area="" asp-controller="Home" asp-action="index" style="color:rgb(127, 190, 75)">Trang Chủ</a>
+                            </li>
+                            <li class="page-scroll">
+                                <a asp-area="" asp-controller="CloudServer" asp-action="index" style="color:black; touch-action:pan-y;">Cloud Server</a>
+                            </li>
+                            <li class="page-scroll">
+                                <a asp-area="" asp-controller="RentPlace" asp-action="index" style="color:black">Thuê Chỗ Đặt</a>
+                            </li>
+                            <li class="page-scroll">
+                                <a asp-area="" asp-controller="About" asp-action="index" style="color:black">Giới Thiệu</a>
+                            </li>
+                            <li class="page-scroll" id="lienhe">
+                                <a asp-area="" asp-controller="Contact" asp-action="index" style="color:black">Liên Hệ</a>
+                            </li>
+                        </ul>
+
+                    </div><!--/.nav-collapse -->
+                </div>
+                <div class="col-md-2">
+                    <a class="font-weight-bold btn btn-primary theme_button mt-2" href="https://vncloud.vn/cloud-server/">Get Started</a>
+                </div>
             </div>
-            <div class=" collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav ">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="index" style="color:rgb(127, 190, 75)">TRANG CHỦ</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#" style="color:black; touch-action:pan-y;">CLOUD SERVER</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="# " style="color:black">THUÊ CHỖ ĐẶT</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#" style="color:black">GIỚI THIỆU</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#" style="color:black">LIÊN HỆ</a>
-                    </li>
-                </ul>
-            </div><!--/.nav-collapse -->
         </div>
     </nav>
     <hr /><hr /><hr />
-    
-        @RenderBody()
-        <hr />
 
-    
+    @RenderBody()
+    <div class="clearfix"></div>
 
     <div class="outer-footer">
         <div class="footer" style="background-image:url('https://vncloud.vn/wp-content/themes/vw-business-pro/assets/images/footerbg.jpg')">
@@ -76,7 +123,7 @@
                         <div class="col-lg-2 col-sm-6">
                             <aside id="text-2" class="widget widget_text">
                                 <h3 class="widget-title">Dịch vụ</h3>			<div class="textwidget">
-                                    <p><a href="https://vncloud.vn/cloud-server/">Thuê Cloud Server</a></p>
+                                    <p><a asp-area="" asp-controller="CloudServer" asp-action="index">Thuê Cloud Server</a></p>
                                     <p><a href="https://vncloud.vn/collocation/">Thuê chỗ đặt Máy chủ</a></p>
                                     <p><a href="https://vncloud.vn/contact/">Thuê Máy chủ Vật lý</a></p>
                                 </div>
@@ -125,12 +172,12 @@
                 </div><!-- .container -->
             </div><!-- #footer_box -->
         </div>		<div class="copyright " style="color:white;background-color:rgb(127, 190, 75)">
-            <div class="container " >
-                
-                    <div class=" col-md-12 col-sm-12 text-center" >
-                        <p style="font-size:14px" >© 2018 VNCLOUD. ALL RIGHTS RESERVED.<span class="credit_link"><!--?//php echo esc_html( vw_business_pro_credit_link() ); ?--></span></p>
-                    </div>
-                
+            <div class="container ">
+
+                <div class=" col-md-12 col-sm-12 text-center">
+                    <p style="font-size:14px">© 2018 VNCLOUD. ALL RIGHTS RESERVED.<span class="credit_link"><!--?//php echo esc_html( vw_business_pro_credit_link() ); ?--></span></p>
+                </div>
+
             </div>
         </div>
     </div>
@@ -139,7 +186,7 @@
     <script src="~/VNCloud/js/bootstrap.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="~/VNCloud/js/main.js"></script>
-
+    <script src="~/VNCloud/js/lightbox.js"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>
