@@ -15,6 +15,7 @@ body {
     color: #5b5b5b;
     background-color: #fff;
     margin-top: -20px;
+    line-height:1.8;
 }
 
 .headers {
@@ -66,11 +67,11 @@ ul {
 }
 
 .top_bar {
+    height: 59px;
     background: #000000;
     width: 100%;
     float: left;
     padding: 4px;
-    margin-bottom: 62px;
 }
 
 #nav-bar {
@@ -87,13 +88,20 @@ ul {
     }
 
 //Typography
-h1, h4, h5, h6 {
+h1, h5, h6 {
     margin: 10px -15px 35px;
     text-transform: uppercase;
     font-family: 'Roboto';
     letter-spacing: 1px;
 }
-
+h4 {
+    margin: 0;
+    padding: 10px 0;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    color: #046b96;
+    font-family: 'Roboto';
+}
 h2 {
     font-family: 'Roboto';
     text-transform: uppercase;
@@ -143,10 +151,6 @@ a {
         text-decoration: none;
         color: #7fbe4b !important;
     }
-
-#site-top {
-    margin: 0;
-}
 
 
 
@@ -404,7 +408,6 @@ a.theme_white_button {
     border: none;
     text-transform: uppercase;
     margin-top: 3px;
-    letter-spacing: 1px;
     padding: 12px 20px;
     font-size: 14px;
     font-weight: bold;
@@ -421,10 +424,11 @@ a.theme_white_button {
     margin-right: 20px;
 }
 section {
-    margin-top:30px;
     margin-bottom: 30px;
 }
-
+#site-top {
+    margin: 0;
+}
 section h3 {
     font-weight: 900;
     color: #7fbe4b;
@@ -572,4 +576,64 @@ table {
 .white_head_title {
     margin-top: 30px;
     color: #fff;
+}
+.tab-content h4 {
+    font-weight: bold;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    display: table;
+    margin-bottom: 20px;
+}
+section h4 {
+    color: #000;
+    font-size: 20px;
+}
+
+.services-editor {
+    line-height: 27px;
+    font-size: 15px;
+}
+.rotate-btn {
+    position: relative;
+    width: 150px;
+}
+.nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active {
+    background-color: transparent;
+}
+#latest_post{
+    height:580px;
+}
+.innerbox {
+    background-size: 100% 100%;
+}
+.post_thumb {
+    position: relative;
+}
+.date_div {
+    position: absolute;
+    bottom: 0;
+    background-color: #7fbe4b;
+    padding: 11px;
+    color: #ffffff;
+    font-weight: bold;
+}
+h4.latest_post_name a {
+    font-weight: bold;
+}
+.latest_post_text span {
+    color: #000000;
+    font-weight: bold;
+}
+.latest_post_text i {
+    color: #7fbe4b;
+    font-weight: bold;
+}
+.m-0 {
+    margin: 0 0 !important;
+}
+.mr-3 {
+    margin-right: 1rem !important;
+}
+.mr-2 {
+    margin-right: .5rem !important;
 }
