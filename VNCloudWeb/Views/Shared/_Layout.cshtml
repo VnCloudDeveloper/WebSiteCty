@@ -54,7 +54,7 @@
             </div>
         </div>
     </section>
-    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <!--<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container headers ">
             <div class="container" id="nav-bar">
                 <div class="col-md-2">
@@ -93,10 +93,51 @@
                             </li>
                         </ul>
 
-                    </div><!--/.nav-collapse -->
+                    </div>
                 </div>
                 <div class="col-md-2">
                     <a class="font-weight-bold btn btn-primary theme_button mt-2" href="https://vncloud.vn/cloud-server/">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container headers " id="nav-bar">
+            <div class="container" style="margin-top:5px;">
+                <div class="navbar-header page-scroll col-md-2"style="margin-top:5px;">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a asp-area="" asp-controller="Home" asp-action="index" class="custom-logo-link" rel="home" itemprop="url"><img src="https://vncloud.vn/wp-content/uploads/2018/07/cropped-LogowebVNCLOUD-4.png" class="custom-logo" alt="vnCloud" itemprop="logo" width="250" height="70"></a>
+
+                </div>
+                <div class="navbar-collapse collapse in" aria-expanded="true" style="">
+                    <ul class="nav navbar-nav col-md-8">
+                        <li class="page-scroll">
+                            <a asp-area="" asp-controller="Home" asp-action="index" style="color:rgb(127, 190, 75)">Trang Chủ</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a asp-area="" asp-controller="CloudServer" asp-action="index" style="color:black; touch-action:pan-y;">Cloud Server</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a asp-area="" asp-controller="RentPlace" asp-action="index" style="color:black">Thuê Chỗ Đặt</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a asp-area="" asp-controller="About" asp-action="index" style="color:black">Giới Thiệu</a>
+                        </li>
+                        <li class="page-scroll" id="lienhe">
+                            <a asp-area="" asp-controller="Contact" asp-action="index" style="color:black">Liên Hệ</a>
+                        </li>
+                    </ul>
+
+
+                    <ul class="nav navbar-nav navbar-right col-md-2">
+                        <a class="font-weight-bold btn btn-primary theme_button mt-2" href="https://vncloud.vn/cloud-server/">Get Started</a>
+                    </ul>
+
                 </div>
             </div>
         </div>
