@@ -100,6 +100,7 @@ h2 {
     color: #7fbe4b;
     font-weight: 900;
     letter-spacing: 3px;
+    line-height: 2.0;
 }
 
 h3 {
@@ -147,11 +148,7 @@ a {
     margin: 0;
 }
 
-.container {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .contact_details {
     padding: 12px 0;
@@ -163,7 +160,7 @@ a {
     border-bottom: 1px solid rgba(255,255,255,0.3);
     text-transform: uppercase;
     font-family: "Roboto";
-    background-color: @dark;
+    background-color: #333333;
 }
 
 .navbar-brand {
@@ -175,7 +172,7 @@ a {
     }
 
 .navbar-custom a {
-    color: @light;
+    color: #f4f4f4;
 }
 
 .navbar-custom .nav li a {
@@ -192,7 +189,7 @@ a {
 .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    color: @light;
+    color: #f4f4f4;
 }
 
 @media(min-width: 767px) {
@@ -207,7 +204,7 @@ a {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: @dark;
+        background-color: #333333;
     }
 
     .navbar-custom .top-nav-collapse {
@@ -315,14 +312,9 @@ a {
             }
 }
 
-//COntact section
-#contact {
-    background: @dark;
-    color: @light;
-    padding-bottom: 80px;
-}
 
-//footer section
+
+
 .outer-footer {
     background-size: 100% 100%;
     margin: 0;
@@ -347,10 +339,7 @@ a {
 }
 
 
-@media (min-width: 1200px) .row {
-    margin-right: -15px;
-    margin-left: -15px;
-}
+
 
 #slider {
     max-width: 100%;
@@ -367,7 +356,10 @@ img {
     height: auto;
     vertical-align: middle;
 }
-
+#slider .carousel-caption.d-none.d-md-block {
+    max-width: 600px;
+    margin: 0 auto;
+}
 #slider .carousel-caption {
     top: 50%;
     transform: translateY(-50%);
@@ -381,7 +373,11 @@ img {
     padding: 20px 20px;
     text-align: center;
 }
-
+#slider h2 {
+    text-transform: uppercase;
+    color: #7fbe4b;
+    font-weight: 900;
+}
 #slider p {
     color: #ffffff;
     font-weight: 700;
@@ -424,6 +420,10 @@ a.theme_white_button {
 .about-content {
     margin-right: 20px;
 }
+section {
+    margin-top:30px;
+    margin-bottom: 30px;
+}
 
 section h3 {
     font-weight: 900;
@@ -436,9 +436,17 @@ section h3 {
     font-size: 1.75rem;
 }
 
-section {
-    margin-bottom: 30px;
-}
+    section h2 {
+        font-weight: bold;
+        padding: 0;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        color: #22272b;
+        padding: 0 0 10px;
+        margin: 0;
+        font-weight: 900;
+        letter-spacing: 3px;
+    }
 
 #services-tab h3 {
     font-weight: 900;
