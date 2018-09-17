@@ -15,7 +15,7 @@ body {
     color: #5b5b5b;
     background-color: #fff;
     margin-top: -20px;
-    line-height:1.8;
+    line-height: 1.8;
 }
 
 .headers {
@@ -67,12 +67,12 @@ ul {
 }
 
 .top_bar {
-    height: 59px;
+    
     background: #000000;
     width: 100%;
     float: left;
     padding: 4px;
-    margin-bottom:55px;
+    margin-bottom: 55px;
 }
 
 #nav-bar {
@@ -89,21 +89,20 @@ ul {
     }
 
 //Typography
-.main_title
-{
-    margin-top:20px;
+.main_title {
+    margin-top: 20px;
 }
 
 h1, h5, h6 {
     text-transform: uppercase;
     font-family: 'Roboto';
     letter-spacing: 1px;
-    padding: 10px 0 ;
-    line-height: 1.4 ;
-    letter-spacing: 1px ;
-    color: #046b96 ;
-    margin-top:70px;
-    margin-bottom:10px;
+    padding: 10px 0;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    color: #046b96;
+    margin-top: 70px;
+    margin-bottom: 10px;
     text-transform: none;
 }
 
@@ -116,6 +115,7 @@ h4 {
     color: #046b96;
     font-family: 'Roboto';
 }
+
 h2 {
     font-family: 'Roboto';
     text-transform: uppercase;
@@ -133,6 +133,7 @@ h3 {
     position: relative;
     margin-bottom: 20px;
 }
+
     h3::after {
         content: "";
         position: absolute;
@@ -198,7 +199,7 @@ a {
     padding: 10px 5px;
     background: #ffffff;
     border: 20px solid #ebf1ff;
-    margin:-15px;
+    margin: -15px;
 }
 
 .contact-address, .contact-email, .contact-phone {
@@ -213,10 +214,14 @@ a {
 }
 
 
-span{
+span {
     font-weight: 700;
 }
 
+.custom-logo{
+    max-height:125px;
+    width:auto;
+}
 .contact_details {
     padding: 12px 0;
 }
@@ -256,7 +261,16 @@ span{
 .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    color: #f4f4f4;
+    border:none;
+    background-color: white;
+    
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: #ccc;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+    height:5px;
+    background-color: black;
 }
 
 @media(min-width: 767px) {
@@ -309,77 +323,32 @@ span{
     .who-section {
         padding: 100px 0;
     }
+
 }
 
+
 @media(max-width:1200px) {
-    .headers {
-        height: 100px;
+    .contact_details {
+        padding: 12px 0 20px 0;
     }
 
-    .custom-logo {
-        height: 40px;
-        width: auto;
-    }
-
-    .navbar-nav > .page-scroll > a {
-        font-size: 14px !important;
-    }
-
+        .contact_details .row ul {
+            text-size-adjust: auto;
+        }
     #nav-bar {
         margin-top: 20px;
     }
 }
 
-@media(max-width:992px) {
-
-    .custom-logo {
-        height: 40px;
-        width: auto;
-    }
-
-    .myTopnav .midnav  li a {
-        display: none;
-    }
-    .myTopnav .rightnav  a {
-        display: none;
-    }
-
-    .myTopnav .midnav li a.icon {
-       
-        float: right;
-        display: block;
+@media (min-width: 1024px) {
+    .collapse {
+        display: none !important;
     }
 }
 
-@media(max-width:992px) {
+@media(min-width:991px) {
 
-    .custom-logo {
-        height: 40px;
-        width: auto;
-    }
-
-    .midnav .responsive {
-        position: relative;
-    }
-
-        .midnav .responsive .icon {
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-
-        .midnav .responsive  li{
-            list-style:none;
-            
-        }
-            .midnav .responsive li a {
-                float: none;
-                display: block;
-                text-align: right;
-            }
 }
-
-
 
 
 .outer-footer {
@@ -423,10 +392,12 @@ img {
     height: auto;
     vertical-align: middle;
 }
+
 #slider .carousel-caption.d-none.d-md-block {
     max-width: 600px;
     margin: 0 auto;
 }
+
 #slider .carousel-caption {
     top: 50%;
     transform: translateY(-50%);
@@ -440,11 +411,13 @@ img {
     padding: 20px 20px;
     text-align: center;
 }
+
 #slider h2 {
     text-transform: uppercase;
     color: #7fbe4b;
     font-weight: 900;
 }
+
 #slider p {
     color: #ffffff;
     font-weight: 700;
@@ -454,8 +427,8 @@ img {
     font: 16px/20px roboto;
 }
 
-#slider small{
-    color:#fff;
+#slider small {
+    color: #fff;
 }
 
 a.theme_button {
@@ -490,12 +463,15 @@ a.theme_white_button {
 .about-content {
     margin-right: 20px;
 }
+
 section {
     margin-bottom: 30px;
 }
+
 #site-top {
     margin: 0;
 }
+
 section h3 {
     font-weight: 900;
     color: #7fbe4b;
@@ -507,17 +483,17 @@ section h3 {
     font-size: 1.75rem;
 }
 
-    section h2 {
-        font-weight: bold;
-        padding: 0;
-        margin-bottom: 20px;
-        text-transform: uppercase;
-        color: #22272b;
-        padding: 0 0 10px;
-        margin: 0;
-        font-weight: 900;
-        letter-spacing: 3px;
-    }
+section h2 {
+    font-weight: bold;
+    padding: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #22272b;
+    padding: 0 0 10px;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
 
 #services-tab h3 {
     font-weight: 900;
@@ -627,6 +603,7 @@ table {
     margin-top: 30px;
     color: #fff;
 }
+
 .tab-content h4 {
     font-weight: bold;
     color: #ffffff;
@@ -634,6 +611,7 @@ table {
     display: table;
     margin-bottom: 20px;
 }
+
 section h4 {
     color: #000;
     font-size: 20px;
@@ -643,25 +621,32 @@ section h4 {
     line-height: 27px;
     font-size: 15px;
 }
+
 .rotate-btn {
     position: relative;
     width: 150px;
 }
+
 .nav-pills {
     margin-bottom: 20px;
 }
-.nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active {
-    background-color: transparent;
+
+    .nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active {
+        background-color: transparent;
+    }
+
+#latest_post {
+    height: 580px;
 }
-#latest_post{
-    height:580px;
-}
+
 .innerbox {
     background-size: 100% 100%;
 }
+
 .post_thumb {
     position: relative;
 }
+
 .date_div {
     position: absolute;
     bottom: 0;
@@ -670,23 +655,29 @@ section h4 {
     color: #ffffff;
     font-weight: bold;
 }
+
 h4.latest_post_name a {
     font-weight: bold;
 }
+
 .latest_post_text span {
     color: #000000;
     font-weight: bold;
 }
+
 .latest_post_text i {
     color: #7fbe4b;
     font-weight: bold;
 }
+
 .m-0 {
     margin: 0 0 !important;
 }
+
 .mr-3 {
     margin-right: 1rem !important;
 }
+
 .mr-2 {
     margin-right: .5rem !important;
 }
